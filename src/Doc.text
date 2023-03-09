@@ -1,0 +1,100 @@
+npm -i react-router-dom
+------------------
+Lazy loading->Is a technique when components not required home page can be split into separate code bunndle
+and downloaded whe user navigate to that page.Its improve application performace.Its reduce initial 
+load time to improve our performance
+
+Lazy loading require default export
+--------------
+
+refs=>refs is a property of react with the help of refs we directly manipulate the dom .When we making form
+kisi text ka color change karate ho.React hame ye use karane ke liye mana karata hai
+
+There are few good use cases for refs
+->Managing focus,text selection,or a media playback.
+->Triggering imperative animations.
+->integrating with third party DOM libraries
+------------------
+Refs are simply references to anything, like a DOM node, Javascript value, etc. 
+To create a ref in a functional component we use the useRef() hook which returns a mutable object with a .
+ current property set to the initialValue we passed to the hook.
+ ---------
+ Lazy loading
+ useRef
+----------------
+Math function
+ Ceil =>nearest integer value
+ for ex => Math.ceil(4.2)=>Its give 5
+ -----
+ Math.floor=>It gives downward value
+ Math.floor(4.2)=>It gives 4
+ ==================
+ Reverse number
+
+ var num=438;var rev=0;
+while(num!=0){
+    rev=rev*10+num%10
+    num=(Math.floor(num/10))
+}
+console.log(rev)
+-----------------------------
+useRef hook=>
+useREf hook functional component When we need to manipulate dom 
+handle focus,change input value color
+---------------
+uncontrolled=>documentById
+uncontrolled and controlled=>one time value retrieval e.g. on submit,validating on submit
+==================
+
+Utilty functions=>
+JavaScript utility functions are useful, reusable snippets that you can reuse across many different projects.
+ Their purpose is to provide a consistent and 
+efficient answer to common tasks and help improve the consistency of your code.
+---------------------------
+Static Method =>
+The static keyword is used to define static method for a class.Static methods are called without 
+creating object and cannot be called through a class instance(object). 
+Static methds are often used to create utility functions for an application
+--------------
+The getDerivedStateFromError() method is invoked if some error occurs during the rendering phase of any lifecycle methods or any children 
+-------------
+Error Boundary
+A JavaScript error in a part of the UI shouldn’t break the whole app. To solve this problem for React users, React 16 introduces a new concept of an “error boundary”.
+
+Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors,
+ and display a fallback UI instead of the component tree that crashed.
+ -----------------------------
+The setInterval() method repetedly calls a function or executes a code snippet,
+with a fixed time delay between each call.It returns a interval ID which uniquely identifies the interval,
+so you can remove it later by calling clearInterval().
+----
+clearInterval() method cancels a timed,repeating action which was previously established by a call to setInterval
+
+--------------------
+Typechecking With PropTypes=>
+Props=>Props is properties
+Props should read only
+As your app grows, you can catch a lot of bugs with typechecking.
+React has some built-in typechecking abilities. 
+To run typechecking on the props for a component, you can assign the special propTypes property
+
+import PropTypes from 'prop-types';
+
+for ex=>here ttile string and if i passed number then faced following error
+Warning: Failed prop type: Invalid prop `title` of type `number` supplied to `Navbar`, expected `string`.
+    at Navbar
+--
+If we not pass props title and aboutText from app then in Navabar component it takes default props
+    title="TextUtils" aboutText="About TextUtils"
+ ----------------
+ serach
+ npm install axios
+ --------------------
+
+ echo "# lazyLoadingErrorboundarySearch" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mohininimap/lazyLoadingErrorboundarySearch.git
+git push -u origin main
