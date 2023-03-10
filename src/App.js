@@ -12,6 +12,7 @@ import { UserefhookfunctionalCompo } from './UserefhookfunctionalCompo';
 import Refform from './Refform';
 import Parenterrorboundry from './errorboundary/Parenterrorboundry';
 import SearchItemFromList from './searchItemFromList/SearchItemFromList';
+import Pagination from './pagination/Pagination';
 
 const LazyAbout=React.lazy(()=>import('./About'))
 
@@ -38,9 +39,8 @@ function App() {
         <Route path="/refsfunctional" element={<UserefhookfunctionalCompo/>}>REfs</Route>
         <Route path="/refsform" element={<Refform/>}>REfs</Route>
         <Route path="/errorboundary" element={<Parenterrorboundry/>}>ErrorBOundary</Route>
-
         <Route path="/searchitemfromlist" element={<SearchItemFromList/>}>Search</Route>
-    
+         <Route path="/pagination" element={<Pagination/>}>Pagination</Route>
       </Routes>
      </Router>
     </div>

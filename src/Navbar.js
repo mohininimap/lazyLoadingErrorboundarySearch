@@ -16,7 +16,7 @@ const Navbar = (props) => {
     <NavLink to="/refsform" className="menu">Refs</NavLink>
     <NavLink to="/errorboundary" className="menu">ErrorBoundary</NavLink>
     <NavLink to="/searchitemfromlist" className="menu">Search</NavLink>
-
+    <NavLink to="/pagination">Pagination</NavLink>
     
     </div>
    

@@ -1,0 +1,31 @@
+How javascript work?
+Everything in javascript happens inside an Execution context
+
+Execution Context=> 1rst part is memory also known as variable environment all variable and functions stored as key value pair
+2nd part is code component also known as thread execution
+
+=>Javascript is a synchronous single-threaded language
+single threaded means one command at a time and a specific order It means only that goes to next line when current line finish executing
+=====================
+What happens when you run javascript
+
+var n=2;
+function square(num){
+    var ans=num*num;
+    return ans;
+}
+var squre2=squre(n);
+var squre4=squre(4)
+
+->When run javascript global execution context is created
+->The first phase is also known as memory  creation page .In this phase javascript allocate 
+the memory to all variables and function=>Javascript having its qwn call stack.
+A callstack like a stack
+
+Every time bottom of the stack having GlobalExecutionStack
+
+callstack=>bottom having GEC ,new EC context pushed in callstack and when finished then removed 
+from callstack whenall execution context done then remove Global Execution Context from call stack
+->Callstack maintains order of execution of execution contexts.
+
+call stack || Execution context stack || Program stack || Control Stack || Runtime stack || Machine Stack all is one
